@@ -1,0 +1,43 @@
+body{
+    background-color:	#5F9EA0;
+    color: black;
+}
+
+#pet-cage{
+    display: flex;
+    flex-grow: 1;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.pet-main{
+    align-self: stretch; 
+    padding: 10px;    
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-top: 20px;
+    flex-basis: 30%;
+    word-wrap: break-word;
+    border:1px dotted grey;
+}
+.pet-main p{
+    font-style:italic;
+}
+.pet-main img{    
+    border-radius: 50%;
+    max-width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+#pet-id{
+    text-align: center;
+}
+.pet-main .one p, .pet-main p{
+    font-style: normal;
+    text-align: center;
+}
+.pet-main .one p{    
+    font-weight: bolder;
+}
