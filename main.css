@@ -1,9 +1,8 @@
 body{
-    background-color:	#5F9EA0;
-    color: black;
+    background-color:	#579CC1;
+    color: whitesmoke;
 }
-
-#pet-cage{
+#pet-container{
     display: flex;
     flex-grow: 1;
     flex-direction:row;
@@ -11,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.pet-main{
+.pet-info{
     align-self: stretch; 
     padding: 10px;    
     margin-left: 20px;
@@ -21,23 +20,58 @@ body{
     word-wrap: break-word;
     border:1px dotted grey;
 }
-.pet-main p{
+.pet-info p{
     font-style:italic;
 }
-.pet-main img{    
+.pet-info img{    
     border-radius: 50%;
     max-width: 200px;
     height: 200px;
     margin: auto;
     display: block;
 }
-#pet-id{
-    text-align: center;
+.pet-buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;  
+    align-self: stretch;
 }
-.pet-main .one p, .pet-main p{
+.all{
+    margin-left: auto;
+}
+.logo{
+    font-weight: bold;
+}
+.pet-info:not(.four), .pet-main p{
     font-style: normal;
     text-align: center;
 }
-.pet-main .one p{    
+.pet-info .one p{       
     font-weight: bolder;
 }
+.pet_class { 
+    padding: 2px;
+    text-decoration:none;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    align-self: stretch;
+  }
+  .allpets{
+      margin-right: 20px;
+  }
+  .dinos{
+      background-color: #3D6F66;
+  }
+  .cat{
+    background-color: #728C8C;
+  }
+  .all{
+    background-color: #8C864E;
+  }
+  .dog{
+    background-color: #0A7798;
+  }
+  .pet-main .four{
+      text-align: right;
+  }
