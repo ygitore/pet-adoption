@@ -17,7 +17,7 @@ var pet = [
     Image: "<img src = './images/White_Persian_Cat.JPG'>",
     Name: "Ema",
     Color: 'White',
-    SpecialSkill: 'White Persian Cat can stand up firmly.',
+    SpecialSkill: 'can stand up firmly.',
     TypeOfPet: 'Cat'
     },
     {
