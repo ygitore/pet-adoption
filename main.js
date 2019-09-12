@@ -57,12 +57,18 @@ var petBuilder = (petArr)=>{
     for (let i = 0; i < petArr.length; i++) {
         const element = petArr[i];
         domString += `<div class= "pet-info">
-                        <div class = "pet-name"><p>${element.Name}</p></div>
-                        <div class = "pet-image"><p>${element.Image}</p></div>
-                        <div class = "pet-color"><p>Color: ${element.Color}</p></div>
-                        <div class = "pet-special-skill"><p>Special Skill: ${element.SpecialSkill}</p></div>
-                        <div class = "type-of-pet"><p>Type of Pet: ${element.TypeOfPet}</p></div>
-                        </div>`;
+                        <header>
+                            <div class = "pet-name"><p>${element.Name}</p></div>  
+                        </header>         
+                        <main>       
+                            <div class = "pet-image"><p>${element.Image}</p></div>
+                            <div class = "pet-color"><p>Color: ${element.Color}</p></div>
+                            <div class = "pet-special-skill"><p>Special Skill: ${element.SpecialSkill}</p></div>
+                        </main>
+                        <footer>
+                            <div class = "type-of-pet"><p>Type of Pet: ${element.TypeOfPet}</p></div>
+                        </footer>
+                    </div>`;
     }
     printToDom('pet-container', domString);
 }
