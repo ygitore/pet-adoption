@@ -1,51 +1,51 @@
 var pet = [
     {
         Image: "<img src = './images/british-short-hair.png'>",
-        Name: "Shure",
-        Color: 'grey',
-        SpecialSkill: 'Can run very fast.',
+        Name: 'Shure',
+        Color: 'Grey',
+        SpecialSkill: 'drink water without spilling.',
         TypeOfPet: 'Cat'        
     },
     {
         Image: "<img src = './images/Sand-Cat.JPG'>",
-        Name: "Whity",
-        Color: 'brown',
+        Name: 'Whity',
+        Color: 'Brown',
         SpecialSkill: 'tolerant of extremely hot and cold temperatures. ',
         TypeOfPet: 'Cat'
     },
     {
     Image: "<img src = './images/White_Persian_Cat.JPG'>",
-    Name: "Ema",
+    Name: 'Ema',
     Color: 'White',
-    SpecialSkill: 'can stand up firmly.',
+    SpecialSkill: 'stand up firmly.',
     TypeOfPet: 'Cat'
     },
     {
         Image: "<img src = './images/mydog.JPG'>",
-        Name: "Chihuahua",
+        Name: 'Chihuahua',
         Color: 'Grey',
-        SpecialSkill: 'Chihuahuas are quite capable of scarring away predators and protecting their family.',
+        SpecialSkill: 'scarring away predators and protecting their family.',
         TypeOfPet: 'Dog'
     },
     {
         Image: "<img src = './images/beaggle.JPG'>",
-        Name: "Beagle",
-        Color: 'white grey',
-        SpecialSkill: 'Beagles are explorers. They tend to “sing” along to any loud outside noises.',
+        Name: 'Halaka',
+        Color: 'White grey',
+        SpecialSkill: 'beagles are explorers. They tend to “sing” along to any loud outside noises.',
         TypeOfPet: 'Dog'
     },
     {
         Image: "<img src = './images/dino.JPG'>",
-        Name: "Velociraptor",
+        Name: 'Velociraptor',
         Color: 'Grey',
-        SpecialSkill: 'This dinosaur walked on two feet (bipedal) and could run very fast',
+        SpecialSkill: 'walk on two feet and could run very fast',
         TypeOfPet: 'Dinos'
     },
     {
         Image: "<img src = './images/Pterodactyl.JPG'>",
-        Name: "Pterodactyl",
+        Name: 'Pterodactyl',
         Color: 'Brown',
-        SpecialSkill: 'Capable of flying.',
+        SpecialSkill: 'floppy flying.',
         TypeOfPet: 'Dinos'
     }
 ];
@@ -59,9 +59,9 @@ var petBuilder = (petArr)=>{
         domString += `<div class= "pet-info">
                         <div class = "pet-name"><p>${element.Name}</p></div>
                         <div class = "pet-image"><p>${element.Image}</p></div>
-                        <div class = "pet-color"><p><b>Color:</b> ${element.Color}</p></div>
-                        <div class = "pet-special-skill"><p><b>Special Skill:</b> ${element.SpecialSkill}</p></div>
-                        <div class = "type-of-pet"><p><b>Type of Pet:</b> ${element.TypeOfPet}</p></div>
+                        <div class = "pet-color"><p>Color: ${element.Color}</p></div>
+                        <div class = "pet-special-skill"><p>Special Skill: ${element.SpecialSkill}</p></div>
+                        <div class = "type-of-pet"><p>Type of Pet: ${element.TypeOfPet}</p></div>
                         </div>`;
     }
     printToDom('pet-container', domString);
