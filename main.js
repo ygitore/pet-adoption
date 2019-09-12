@@ -1,16 +1,23 @@
 var pet = [
     {
-        Image: "<img src = './images/Britskorthaar.JPG'>",
-        Name: "Britskorthaar",
+        Image: "<img src = './images/british-short-hair.png'>",
+        Name: "Shure",
         Color: 'grey',
         SpecialSkill: 'Can run very fast.',
+        TypeOfPet: 'Cat'        
+    },
+    {
+        Image: "<img src = './images/Sand-Cat.JPG'>",
+        Name: "Whity",
+        Color: 'brown',
+        SpecialSkill: 'tolerant of extremely hot and cold temperatures. ',
         TypeOfPet: 'Cat'
     },
     {
     Image: "<img src = './images/White_Persian_Cat.JPG'>",
-    Name: "White_Persian_Cat",
+    Name: "Ema",
     Color: 'White',
-    SpecialSkill: 'White Persian Cat can stand firmly on terra firma, and do not aspire to reach great heights.',
+    SpecialSkill: 'White Persian Cat can stand up firmly.',
     TypeOfPet: 'Cat'
     },
     {
@@ -38,7 +45,7 @@ var pet = [
         Image: "<img src = './images/Pterodactyl.JPG'>",
         Name: "Pterodactyl",
         Color: 'Brown',
-        SpecialSkill: 'Pterodactylus was capable of ‘flapping flight.',
+        SpecialSkill: 'Capable of flying.',
         TypeOfPet: 'Dinos'
     }
 ];
@@ -49,13 +56,12 @@ var petBuilder = (petArr)=>{
     var domString = '';
     for (let i = 0; i < petArr.length; i++) {
         const element = petArr[i];
-        /* pet-main is flexbox item*/
         domString += `<div class= "pet-info">
-                        <div class = "two"><p>${element.Image}</p></div>
-                        <div class = "one"><p>${element.Name}</p></div>
-                        <div class = "three"><p>${element.Color}</p></div>
-                        <div class = "four"><p>${element.SpecialSkill}</p></div>
-                        <div class = "five"><p>${element.TypeOfPet}</p></div>
+                        <div class = "pet-name"><p>${element.Name}</p></div>
+                        <div class = "pet-image"><p>${element.Image}</p></div>
+                        <div class = "pet-color"><p><b>Color:</b> ${element.Color}</p></div>
+                        <div class = "pet-special-skill"><p><b>Special Skill:</b> ${element.SpecialSkill}</p></div>
+                        <div class = "type-of-pet"><p><b>Type of Pet:</b> ${element.TypeOfPet}</p></div>
                         </div>`;
     }
     printToDom('pet-container', domString);
@@ -71,22 +77,8 @@ var buttonClick = (e)=>{
     }
     petBuilder(selectPets);
 };
-var animalBuilder = (petArr)=>{
-    var domString = '';
-    for (let i = 0; i < petArr.length; i++) {
-        const element = petArr[i];
-        domString += `<div class= "pet-info">`;        
-        domString += `<p>${element.Image}</p>`;
-        domString += `<p>${element.Name}</p>`;
-        domString += `<p>${element.Color}</p>`;
-        domString += `<p>${element.SpecialSkill}</p>`;
-        domString += `<p>${element.TypeOfPet}</p>
-        </div>`;
-    }
-    printToDom('pet-container', domString);
-}
 var buttonClickAll = ()=>{
-    animalBuilder(pet);        
+    petBuilder(pet);        
 };
 document.getElementById('all').addEventListener('click', buttonClickAll);
 document.getElementById('Cat').addEventListener('click', buttonClick);

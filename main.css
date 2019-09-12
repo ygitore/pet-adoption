@@ -1,3 +1,6 @@
+* { 
+    box-sizing: border-box; 
+}
 body{
     background-color:	#579CC1;
     color: whitesmoke;
@@ -10,18 +13,36 @@ body{
     justify-content: center;
     align-items: center;
 }
-.pet-info{
-    align-self: stretch; 
-    padding: 10px;    
-    margin-left: 20px;
-    margin-right: 0px;
+.logo{
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
     margin-top: 20px;
-    flex-basis: 30%;
-    word-wrap: break-word;
-    border:1px dotted grey;
+    font-size: 20px;
 }
-.pet-info p{
-    font-style:italic;
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+.pet-buttons{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin:auto
+}
+.allpets { 
+    padding: 2px;
+    text-decoration:none;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    align-self: stretch;
+    margin: 40px;
+    flex-grow: 2;
 }
 .pet-info img{    
     border-radius: 50%;
@@ -30,48 +51,57 @@ body{
     margin: auto;
     display: block;
 }
-.pet-buttons{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;  
-    align-self: stretch;
+.pet-info{
+    align-self: stretch;         
+    padding: 5px;    
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-basis: 30%;
+    word-wrap: break-word;
+    border:1px solid burlywood;
+    border-radius: 5px;
+} 
+.dinos{
+    background-color: #3D6F66;
+}
+.cat{
+    background-color: #728C8C;
 }
 .all{
-    margin-left: auto;
-}
-.logo{
-    font-weight: bold;
-}
-.pet-info:not(.four), .pet-main p{
-    font-style: normal;
-    text-align: center;
-}
-.pet-info .one p{       
-    font-weight: bolder;
-}
-.pet_class { 
-    padding: 2px;
-    text-decoration:none;
-    border-radius: 5px;
-    color: #fff;
-    text-align: center;
-    align-self: stretch;
-  }
-  .allpets{
-      margin-right: 20px;
-  }
-  .dinos{
-      background-color: #3D6F66;
-  }
-  .cat{
-    background-color: #728C8C;
-  }
-  .all{
     background-color: #8C864E;
-  }
-  .dog{
+}
+.dog{
     background-color: #0A7798;
-  }
-  .pet-main .four{
-      text-align: right;
-  }
+}
+.pet-info .pet-name p{       
+    font-weight: bolder;
+    border-top: 1px solid lightblue;
+    border-bottom: 1px solid lightblue;
+    background-color: #315a70;
+    margin: -6px;
+    padding: 5px;
+}
+.pet-name, .pet-color{
+    text-align: center;
+}
+.pet-color{
+    padding-left: 20px;
+    margin-top:-10px;
+}
+.pet-special-skill{
+    margin-top: -14px;
+    text-align: left;
+    margin-left: 50px;
+}
+.type-of-pet{
+    flex: none;
+    padding: 2px 2px;
+    border-radius:0 0 10px 10px;
+    align-items: flex-end;
+    margin: 5px 0 -10px;
+    text-align: center;
+    padding-bottom: 0;
+    margin-top: -29px;
+}
